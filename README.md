@@ -11,6 +11,8 @@ Based on the training execution using the `stock-market-trades.csv` dataset:
 - **Loss Convergence:** Reduced from **0.6963** to **0.3667** within 9 epochs.
 - **Optimization:** The model demonstrates exceptional discriminative power, effectively separating high-probability "Loss" conditions from "Win" conditions.
 
+![Outcome result](trade-outcome-risk-predictor.png)
+
 ## 🛠️ Step-by-Step Methodology
 
 ### 1. Step 1 (Objective)
@@ -76,3 +78,4 @@ streamlit run app.py
 
 - **Interpretation Layer:** The model identified that specific industries combined with "late-session" volatility significantly increase loss probability.
 - **Loss Mitigation:** By filtering out trades with a >60% predicted loss probability, the system serves as a "Guard" for capital preservation.
+
